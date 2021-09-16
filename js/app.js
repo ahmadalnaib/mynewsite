@@ -1,7 +1,7 @@
 const about =document.querySelector('#about');
 const contact =document.querySelector('#contact');
 const projects =document.querySelector('#projects');
-const projects =document.querySelector('#projects-projects');
+const projectsProjects =document.querySelector('#projects-projects');
 const aboutContact =document.querySelector('#about-content');
 const contactContent =document.querySelector('#contact-content');
 
@@ -57,7 +57,7 @@ projects.addEventListener('click',()=>{
     y: "center",
     width: "50%",
     height: "50%",
-    mount:contactContent,
+    mount:projectsProjects,
     onfocus:function(){
       this.setBackground('#00aa00')
     },
