@@ -1,5 +1,7 @@
 const about =document.querySelector('#about');
 const contact =document.querySelector('#contact');
+const projects =document.querySelector('#projects');
+const projects =document.querySelector('#projects-projects');
 const aboutContact =document.querySelector('#about-content');
 const contactContent =document.querySelector('#contact-content');
 
@@ -31,6 +33,26 @@ about.addEventListener('click',()=>{
 contact.addEventListener('click',()=>{
   const contactBox=new WinBox({
     title:"Contact Me",
+    x: "center",
+    y: "center",
+    width: "50%",
+    height: "50%",
+    mount:contactContent,
+    onfocus:function(){
+      this.setBackground('#00aa00')
+    },
+    onblur:function(){
+      this.setBackground('#777')
+    }
+
+  })
+})
+
+
+
+projects.addEventListener('click',()=>{
+  const projectBox=new WinBox({
+    title:"projects",
     x: "center",
     y: "center",
     width: "50%",
